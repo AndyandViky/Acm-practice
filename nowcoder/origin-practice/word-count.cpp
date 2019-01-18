@@ -8,7 +8,7 @@ using namespace std;
 #define MAXSIZE 10000
 
 int main() {
-    int i=0, j=0, count=0;
+    int i = 0, j = 0, count = 0;
     char phrase[MAXSIZE], tempC;
     while(true) {
         scanf("%c", &tempC);

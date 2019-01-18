@@ -10,9 +10,9 @@ int N;
 
 void print(int arr[][MAXSIZE]) {
     int i, j;
-    for(i=0; i<N; i++) {
-        for(j=0; j<N; j++) {
-            if(j==N-1) printf("%d", arr[i][j]);
+    for(i = 0; i < N; i++) {
+        for(j = 0; j < N; j++) {
+            if(j == N-1) printf("%d", arr[i][j]);
             else printf("%d ", arr[i][j]);
         }
         printf("\n");
@@ -21,15 +21,15 @@ void print(int arr[][MAXSIZE]) {
 int main() {
     int i, j, matrix[MAXSIZE][MAXSIZE];
     scanf("%d", &N);
-    for(i=0; i<N; i++) {
-        for(j=0; j<N; j++) {
+    for(i = 0; i < N; i++) {
+        for(j = 0; j < N; j++) {
             scanf("%d", &matrix[i][j]);
         }
     }
 
     // reverse
-    for(i=0; i<N; i++) {
-        for(j=i; j<N; j++) {
+    for(i = 0; i < N; i++) {
+        for(j = i; j < N; j++) {
             int temp = matrix[i][j];
             matrix[i][j] = matrix[j][i];
             matrix[j][i] = temp;
