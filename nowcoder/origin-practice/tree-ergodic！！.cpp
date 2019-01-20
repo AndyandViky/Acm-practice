@@ -24,8 +24,15 @@ Node *buildTree(char *pre, char *mid, int length) {
     if(length == 1 && pre[0] == mid[0])
         return root;
 
+    // 核心部分，需要完全掌握
     char* rootMidOrder = mid;
     int rootIndex = 0;
+    //---------------------------------------------------------------------------//
+    /**
+     * mid+length-1详解， 字符串加上数字功能类似于'截取字符串'从(length-1)的位置开始截取！！
+     * 字符串比较在c++ 中直接使用逻辑运算符， 在c中使用 strcamp（）函数
+     */
+    //---------------------------------------------------------------------------//
     while(rootMidOrder[0] != rootKey && rootMidOrder <= (mid+length-1))
     {
         ++rootMidOrder;
