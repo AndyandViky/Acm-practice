@@ -33,7 +33,7 @@ Node *buildTree(char *pre, char *mid, int length) {
      * 字符串比较在c++ 中直接使用逻辑运算符， 在c中使用 strcamp（）函数
      */
     //---------------------------------------------------------------------------//
-    while(rootMidOrder[0] != rootKey && rootMidOrder <= (mid+length-1))
+    while(rootMidOrder[0] != rootKey)
     {
         ++rootMidOrder;
         ++rootIndex;
