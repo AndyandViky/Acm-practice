@@ -1,4 +1,4 @@
 #CMakeLists.txt
 cmake_minimum_required(VERSION 2.8)
 add_definitions("-Wall -std=c++11 -g")
-add_executable(main calculate-2matrix-max.cpp)
+add_executable(main find-min-career.cpp)
