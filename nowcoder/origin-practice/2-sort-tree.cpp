@@ -4,7 +4,6 @@
 
 #include <cstdio>
 using namespace std;
-#define MAXSIZE 100
 
 struct Node{
     int data;
