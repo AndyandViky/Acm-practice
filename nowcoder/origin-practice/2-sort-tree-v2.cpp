@@ -58,24 +58,26 @@ void latDo(Node *Tree) {
 }
 int main() {
     int i, n, element = 0;
-    scanf("%d", &n);
-    // 初始化头
-    BTree = new Node;
-    BTree->rchild = BTree->lchild = NULL;
-    // 建树
-    for(i=0; i<n; i++) {
-        scanf("%d", &element);
-        if(i == 0) BTree->data = element;
-        else {
-            Node *t = find(BTree, element);
-            if(t) insert(t, element);
+    while(scanf("%d",&n) != EOF) {
+        // 初始化头
+        BTree = new Node;
+        BTree->rchild = BTree->lchild = NULL;
+        // 建树
+        for(i=0; i<n; i++) {
+            scanf("%d", &element);
+            if(i == 0) BTree->data = element;
+            else {
+                Node *t = find(BTree, element);
+                if(t) insert(t, element);
+            }
         }
-    }
 
-    preDo(BTree);
-    printf("\n");
-    midDo(BTree);
-    printf("\n");
-    latDo(BTree);
+        preDo(BTree);
+        printf("\n");
+        midDo(BTree);
+        printf("\n");
+        latDo(BTree);
+        printf("\n");
+    }
     return 0;
 }
