@@ -8,7 +8,7 @@ using namespace std;
 
 int main() {
     int n, i, j;
-    char cinData[10][100];
+    char cinData[12][102];
     bool isFalse;
     scanf("%d", &n);
     for(i=0; i<n; i++) {
